@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="addmerchant",method="post",action="/addmerchant")
+        input#inputMerchantName(type="text", placeholder="merchantname", name="merchantname")
+        input#inputMerchantEmail(type="text", placeholder="merchantemail", name="merchantemail")
+        input#inputMerchantPassword(type="text", placeholder="merchantpassword", name="merchantpassword")
+        button#btnSubmit(type="submit") submit

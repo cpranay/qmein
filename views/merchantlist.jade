@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/global-merchant.js')
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+        // MERCHANT LIST
+        h2 Merchant List
+        #userList
+            table
+                thead
+                    th Name
+                    th Email
+                    th Delete
+                tbody
+        // /MERCHANT LIST
+
+    // /WRAPPER
